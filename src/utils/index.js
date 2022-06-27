@@ -110,7 +110,7 @@ export const updateUser = async (username, newUsername, newPassword, newEmail, s
             throw new Error(data.error);
         }else{
             console.log("Account Information Updated");
-            // setUser(newUsername);
+            setUser(newUsername);
             // setUsername(newUsername); // this is input box field ...
             setError(data.message);
         }
